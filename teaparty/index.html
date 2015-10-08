@@ -11,6 +11,24 @@
 <link href="http://cdn.staticfile.org/twitter-bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
 <link href="/stylesheets/base/main.css" rel="stylesheet">
 
+  
+  <link href=/stylesheets/demos/my_realtime.css rel="stylesheet">
+  
+
+
+  
+    <script src= http://cdn.staticfile.org/underscore.js/1.7.0/underscore-min.js></script>
+  
+    <script src= http://cdn.staticfile.org/underscore.js/1.7.0/underscore-min.map></script>
+  
+    <script src= https://cdn1.lncld.net/static/js/av-mini-0.5.5.js></script>
+  
+    <script src= http://cdn.staticfile.org/jquery-dateFormat/1.0/jquery.dateFormat.min.js></script>
+  
+    <script src= /javascript/leancloud-realtime/src/AV.realtime.js></script>
+  
+    <script src= /javascript/teaParty.js></script>
+  
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
 -->
@@ -49,74 +67,15 @@ html5shiv.min.js"></script>
 </nav>
 
 
-<div class="home-page-cover">
-</div>
 <div class="content">
   <div class="container">
     <div class="row">
-      <div class="main col-lg-8 col-md-8 col-sm-12 col-xs-12">
-        <div class="home">
-  <h1 class="page-heading">最新文章</h1>
-
-  <ul class="post-list">
-    
-      <li>
-        <h2>
-          <a class="post-link" href="/markdown/2015/06/27/new-post">markdown 语法</a>
-        </h2>
-        <span class="post-meta">2015年6月27日<a href="/category/markdown/" title="markdown">markdown</a></span>
-        <div class="post-content">
-          « 访问 Wow!Ubuntu...
-        </div>
-
-      </li>
-    
-      <li>
-        <h2>
-          <a class="post-link" href="/unknow/2015/06/26/new-post">第一篇文章不可能这么萌</a>
-        </h2>
-        <span class="post-meta">2015年6月26日<a href="/category/unknow/" title="好愉悦啊">好愉悦啊</a></span>
-        <div class="post-content">
-          第一篇文章还在思考中哦 console.log...
-        </div>
-
-      </li>
-    
-    <nav>
-      <ul class="pager">
-        
-        
-      </ul>
-    </nav>
-  </ul>
-
-
-</div>
-
-      </div>
-      <div class="sidebar col-lg-4 col-md-4 col-sm-12 col-xs-12 hidden-sm hidden-xs">
-        <aside class="about">
-  <h3 class="aside-title">高高的至理名言</h3>
-  <div class="aside-content">
-    <p>変態じゃないよ、仮に変態だとしても変態という名の紳士だよ！
-</p>
-  </div>
-</aside>
-
-<aside class="categories_list">
-  <h3 class="aside-title">标签</h3>
-  <div class="aside-content">
-    <ul><li><a href="/category/unknow/" title="好愉悦啊">好愉悦啊</a> (1)</li><li><a href="/category/markdown/" title="markdown">markdown</a> (1)</li></ul>
-  </div>
-</aside>
-
-<!--<aside class="subscribe">
-  <h3 class="aside-title">订阅</h3>
-  <div class="aside-content">
-    <p>订阅<a href="/feed.xml">RSS</a></p>
-  </div>
-  </aside> -->
-
+      <div class="post-main col-md-12 col-sm-12 col-xs-12">
+        <div class="page-header text-center"><div class="page-header-text">轻飘飘<span class="coffee"><img alt="咖啡" class="icon coffee-icon" src="http://7xjz3m.com1.z0.glb.clouddn.com/iconiconfont-kafeibei.png" /></span>下午茶</div></div><div class="row box"><div class="col-xs-8"><div class="print-label">片刻闲聊</div><div class="print-wall" id="print_wall"></div><div class="input-group"><input class="form-control" id="input_send" placeholder="嘿 茶会时间和大家交流一下哟" type="text" /><span class="input-group-addon btn" id="basic-addon2">发送</span></div></div><div class="col-xs-4"><div class="print-label">茶会人员</div><div class="print-wall" id="vister_list"></div></div></div><script>$(document).ready(function(){
+  appid  = "v8098l55f9fqjbpij3xt8zedrk9if43vwggaw3kuasbp5mby"
+  secret = "93bywkjjd9bh176cdxwureud6tbm4obi760mtl1wacjdbikk"
+  chat_demo.start(appid,secret);
+})</script>
       </div>
     </div>
   </div>
@@ -126,4 +85,5 @@ html5shiv.min.js"></script>
 </footer>
 </body>
 </html>
+
 
