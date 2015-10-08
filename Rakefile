@@ -6,8 +6,8 @@ require "liquid.rb"
 require 'qiniu.rb'
 require 'yaml.rb'
 require 'jekyll'
-local_repo = "gaogao.ninja"
-remote_repo = "gaogao1030.github.io"
+local_repo = "monou.gaogao.ninja"
+remote_repo = "monou"
 #rake server host="localhost" p="4000"
 
 task :console do |t,args|
