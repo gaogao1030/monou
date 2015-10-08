@@ -1,0 +1,47 @@
+.icon {}
+.coffee {
+  margin: 0 5px;
+}
+.coffee-icon {
+  width: 35px;
+}
+.tea-party-nickname {
+  width: 260px;
+  margin: 10px auto 5px auto;
+}
+
+.page-header {
+}
+.page-header-text {
+  font-size: 36px;
+}
+
+.print-label {
+  margin: 20px auto;
+  font-weight: bold;
+}
+
+.print-wall {
+    overflow: auto;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #c2c2c2;
+    border-radius: 4px;
+    height: 300px;
+    max-width: 800px;
+    text-align: left;
+    &#vister_list {
+      max-width: 300px;
+      height: 350px;
+    }
+}
+
+.print-wall p {
+    margin: 10px 0px;
+    word-wrap: break-word;
+}
+
+.box {
+  margin-bottom: 50px;
+}
+
