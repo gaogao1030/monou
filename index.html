@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<div class="home">
+  <h1 class="page-heading">最新文章</h1>
+
+  <ul class="post-list">
+    {% for post in paginator.posts %}
+      <li>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        <span class="post-meta">{{ post.date | date: "%Y年%-m月%-d日" }}{{ post.categories | category_links }}</span>
+        <div class="post-content">
+          {{post.content |strip_html |truncatewords: 2}}
+        </div>
+
+      </li>
+    {% endfor %}
+    <nav>
+      <ul class="pager">
+        {% if paginator.previous_page %}
+        <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace:'/index.html', '/' }}" >
+          &laquo;上一页</a>
+        </li>
+        {% endif %}
+        {% if paginator.next_page %}
+        <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">
+          下一页 &raquo;</a>
+        </li>
+        {% endif %}
+      </ul>
+    </nav>
+  </ul>
+
+
+</div>

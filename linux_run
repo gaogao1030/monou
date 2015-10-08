@@ -1,0 +1,2 @@
+gnome-terminal -e "gulp dev"
+gnome-terminal -e "bundle exec jekyll server -H 0.0.0.0"
