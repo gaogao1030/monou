@@ -119,16 +119,23 @@ task :build do
   system "bundle exec jekyll build -d #{dest} --config _config.yml"
 end
 
+desc "checkout gh-pages"
+task :checkout do
+  cd "../#{local_repo}/" do
+    system "git checkout gh-pages"
+  end
+end
+
 desc "push repo to github"
 task :push do
   cd "../#{local_repo}/" do
     puts "add .nojekyll"
     system "touch .nojekyll"
-    puts "Pushing to `master' branch:"
+    puts "Pushing to `gh-pages' branch:"
     system "git add -A"
     system "git commit -m 'update at #{Time.now.utc}'"
-    system "git push origin master"
-    puts "`master' branch updated."
+    system "git push origin gh-pages"
+    puts "`gh-pages' branch updated."
   end
 end
 
@@ -137,6 +144,7 @@ task :deploy do
   repo = ENV["repo"] || remote_repo
 
   system "rake fetch_repo repo=#{repo}"
+  system "rake checkout"
   system "rake build dest=../#{local_repo}"
   system "rake push"
   puts "has already deployed"
